@@ -16,9 +16,9 @@ if (mostra<=18){
 function para(){
     idade = prompt("Digite um valor")
     console.log(idade)
-    for(let i = 0;i<=n;i++){
-        if (i == n){
-            console.log("Você tem esa idade:" + idade)
+    for(let i = 0;i++){
+        if (i == idade){
+            console.log("Você tem essa idade: " + idade)
         } else {
             console.log("Dado não encontrado!")
         }
@@ -29,15 +29,12 @@ function para(){
 
 function enquanto(){
     let i = 0
-    while(1<10){
-        idade = prompt("Digite um valor")
-        console.log(idade)
-            if (i == n){
-                console.log("Você tem esa idade:" + idade)
-            } else {
-                console.log("Dado não encontrado!")
-            }
+    idade = prompt("Digite um valor")
+    console.log(idade)
+    while(i == idade){
+        alert("Você tem essa idade: " + idade)
     }
+        alert("Dado não encontrado!")
 }
 
 //Exercício 4
@@ -45,18 +42,59 @@ function enquanto(){
 
 //Exercício 5
 
-function repetidor(numero){
-
-    switch(numero){
-        case 1: console.log("Gosto de anime Naruto" + numero)
+function caso(){
+    i = prompt("Digite um valor")
+    console.log(i)
+    switch(i){
+        case 1: alert("Gosto de anime Naruto" + i)
         break
-        case 2: console.log("One Punch é muito bom" + numero)
+        case 2: console.log("One Punch é muito bom" + i)
         break
-        case 3: console.log("A série Supernatural é muito boa" + numero)
+        case 3: console.log("A série Supernatural é muito boa" + i)
         break
-        case 4: console.log("Vikings com Ragnar era o melho" + numero)
+        case 4: console.log("Vikings com Ragnar era o melhor" + i)
         break
-        default: console.log("você assiste algo que não está na lista")
+        default: console.log("Você assiste algo que não está na lista")
     }
 
 }
+
+//Exercício 6
+
+function show(){
+    alert("Olá JavaScript")
+}
+
+//Exercício 7
+function overide(){
+
+    a1 = prompt("Digite o valor de a1")
+    a2 = prompt("Digite o valor de a2")
+    
+    alert("A divisão é: " + div(a1/a2))
+    alert("A multiplicação é: " + mul(a1*a2))   
+    alert("A soma é: " + soma(a1+a2))
+    alert("A subtração é: " + sub(a1-a2))
+    return div
+}
+/*function soma(a1,a2){
+    const total = a1 + a2
+    alert("A soma é: " + total)
+    return total
+}
+
+function sub(a1,a2){
+    const total = a1 - a2 
+    console.log("A subtração é: " + sub)
+    return total
+}
+
+function mul(a1,a2){
+    const total = a1 * a2 
+    return total
+}
+
+function div(a1,a2){
+    const total = a1 / a2 
+    return total
+}*/
