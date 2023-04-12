@@ -2,25 +2,29 @@
 
 //Exercício 1
 
-const mostra = mostrar()
-if (mostra<=18){
-    console.log("Você é adolescente" + mostra)
-} else if (mostra>18 && mostra<=65){
-    console.log("Você é jovem" + mostra)
-} else {
-    console.log("Você é idoso" + mostra)
+function mostraridade(){
+    mostra = prompt("Digite sua idade")
+    console.log(mostra)
+    if (mostra<=18){
+        console.log("Você é adolescente")
+    } else if (mostra>18 && mostra<=65){
+        console.log("Você é jovem")
+    } else {
+        console.log("Você é idoso")
+    }
 }
+
     
 //Exercício 2
 
 function para(){
     idade = prompt("Digite um valor")
     console.log(idade)
-    for(let i = 0;i++){
+    for(let i = 4;i++;){
         if (i == idade){
-            console.log("Você tem essa idade: " + idade)
+            alert("Você tem essa idade: " + idade)
         } else {
-            console.log("Dado não encontrado!")
+            alert("Dado não encontrado!")
         }
     }
 }
@@ -38,26 +42,25 @@ function enquanto(){
 }
 
 //Exercício 4
-/* */
+/*A diferença é que a função "While" só executa o loop enquanto a condição for verdadeira, já o "do While" executa o loop primeiro e depois verifica se a condição é verdadeira ou não.*/
 
 //Exercício 5
-
-function caso(){
-    i = prompt("Digite um valor")
-    console.log(i)
-    switch(i){
-        case 1: alert("Gosto de anime Naruto" + i)
-        break
-        case 2: console.log("One Punch é muito bom" + i)
-        break
-        case 3: console.log("A série Supernatural é muito boa" + i)
-        break
-        case 4: console.log("Vikings com Ragnar era o melhor" + i)
-        break
-        default: console.log("Você assiste algo que não está na lista")
+    function caso(){
+        n = prompt("Digite um valor: ")
+        console.log(n)
+        switch(n){
+            case 1: alert("Gosto de anime Naruto")
+            break
+            case 2: alert("One Punch é muito bom")
+            break
+            case 3: alert("A série Supernatural é muito boa")
+            break
+            case 4: alert("Vikings com Ragnar era o melhor")
+            break
+            default: alert("Você assiste algo que não está na lista")
+        }
     }
-
-}
+    
 
 //Exercício 6
 
@@ -71,30 +74,28 @@ function overide(){
     a1 = prompt("Digite o valor de a1")
     a2 = prompt("Digite o valor de a2")
     
-    alert("A divisão é: " + div(a1/a2))
-    alert("A multiplicação é: " + mul(a1*a2))   
-    alert("A soma é: " + soma(a1+a2))
-    alert("A subtração é: " + sub(a1-a2))
-    return div
-}
-/*function soma(a1,a2){
-    const total = a1 + a2
-    alert("A soma é: " + total)
-    return total
-}
+    function soma(a1,a2){
+        const total = a1 + a2
+        return total
+    }
+    
+    function sub(a1,a2){
+        const total = a1 - a2 
+        return total
+    }
+    
+    function mul(a1,a2){
+        const total = a1 * a2 
+        return total
+    }
+    
+    function div(a1,a2){
+        const total = a1 / a2 
+        return total
+    }
 
-function sub(a1,a2){
-    const total = a1 - a2 
-    console.log("A subtração é: " + sub)
-    return total
+    console.log("A soma é: " + soma(a1,a2))
+    console.log("A subtração é: " + sub(a1,a2))
+    console.log("A multiplicação é: " + mul(a1,a2))   
+    console.log("A divisão é: " + div(a1,a2))
 }
-
-function mul(a1,a2){
-    const total = a1 * a2 
-    return total
-}
-
-function div(a1,a2){
-    const total = a1 / a2 
-    return total
-}*/
