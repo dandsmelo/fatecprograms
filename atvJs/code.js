@@ -16,9 +16,8 @@ function mostraridade(){
 
     
 //Exercício 2
-
 function para(){
-    for(let i = 0;i++;){
+    for(let i = 0;i<100;i++;){
         idade = prompt("Digite um valor")
         console.log(idade)
         if (i == idade){
@@ -28,6 +27,19 @@ function para(){
         }
     }
 }
+
+
+/*function para(){
+    for(let i = 0;i++;){
+        idade = prompt("Digite um valor")
+        console.log(idade)
+        if (i == idade){
+            console.log("Você tem essa idade: " + idade)
+        } else {
+            console.log("Dado não encontrado!")
+        }
+    }
+}*/
 
 //Exercício 3
 
