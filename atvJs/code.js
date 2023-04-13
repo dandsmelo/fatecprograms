@@ -18,13 +18,13 @@ function mostraridade(){
 //Exercício 2
 
 function para(){
-    idade = prompt("Digite um valor")
-    console.log(idade)
-    for(let i = 4;i++;){
+    for(let i = 0;i++;){
+        idade = prompt("Digite um valor")
+        console.log(idade)
         if (i == idade){
-            alert("Você tem essa idade: " + idade)
+            console.log("Você tem essa idade: " + idade)
         } else {
-            alert("Dado não encontrado!")
+            console.log("Dado não encontrado!")
         }
     }
 }
@@ -36,9 +36,10 @@ function enquanto(){
     idade = prompt("Digite um valor")
     console.log(idade)
     while(i == idade){
-        alert("Você tem essa idade: " + idade)
+        i++
+        console.log("Você tem essa idade: " + idade)
     }
-        alert("Dado não encontrado!")
+        console.log("Dado não encontrado!")
 }
 
 //Exercício 4
@@ -49,15 +50,15 @@ function enquanto(){
         n = prompt("Digite um valor: ")
         console.log(n)
         switch(n){
-            case 1: alert("Gosto de anime Naruto")
+            case 1: console.log("Gosto de anime Naruto")
             break
-            case 2: alert("One Punch é muito bom")
+            case 2: console.log("One Punch é muito bom")
             break
-            case 3: alert("A série Supernatural é muito boa")
+            case 3: console.log("A série Supernatural é muito boa")
             break
-            case 4: alert("Vikings com Ragnar era o melhor")
+            case 4: console.log("Vikings com Ragnar era o melhor")
             break
-            default: alert("Você assiste algo que não está na lista")
+            default: console.log("Você assiste algo que não está na lista")
         }
     }
     
