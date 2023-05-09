@@ -1,27 +1,31 @@
-function logon(email,senha){
-    var dados = {email:"dands@gmail.com" , senha:"123"}
+function vets(){
+    var dados = [
+        {id: 1, user:"Dandara" , senha:"123"},
+        {id: 2, user:"Lorena" , senha:"222"},
+        {id: 3, user:"Hannah" , senha:"321"}
+    ]
 
     return dados
 }
 
-function logando(usuario, senha){
-    
-    //const info = logon()
-    //console.log(email)
+function logando(login, senha){
 
-    if(usuario == dados.email){
-        window.alert("Você está logado!")
-    }else{
-        window.alert("Erro!")
-    }
-
-
+    let dao= vets() 
+    for(let i=0;dao.length > i;i++){
+        if (login == dao[i].user && senha){
+            alert("Logado!")
+            window.location.href= "dados.html"
+            break
+        } else { 
+            alert("Não cadastrado")
+        } 
+    } 
 }
 
 function logar(){
 
-    let use = prompt("Digite seu email")
-    let pas = prompt("Digite sua senha")
+    let login = prompt("Digite seu email")
+    let senha = prompt("Digite sua senha")
 
-    logando(usuario, senha)
+    logando(login, senha)
 }
