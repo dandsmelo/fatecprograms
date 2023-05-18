@@ -26,9 +26,19 @@ function login(){
     let nome = document.getElementById("nome").value
     let senha = document.getElementById("senha").value
 
-    if(nome == dados.registros[0].nome && senha == dados.registros[0].senha){
-        alert("Usuário encontrado!")
-    } else{
-        alert("Não encontrado")
+    for(let i=1;dados.registros.length>i; i++){
+        if(nome == dados.registros[i].nome && senha == dados.registros[i].senha){
+            //alert("Usuário encontrado!")
+            let url = "pog.html"
+            let win = window.open(url, '_blank')
+            win.open()
+            break
+        }else{
+            //alert("Não encontrado")
+            let url = "cadastro.html"
+            let win = window.open(url, '_blank')
+            win.open()
+            break
+        }
     }
 }
