@@ -1,0 +1,25 @@
+.traco{
+    border: dashed;
+    padding: 15px;
+    margin: 2%;
+}
+.borda{
+    padding: 15px;
+    border: dotted;
+}
+.centro{
+    align-items: center;
+    text-align: justify;
+}
+h2{
+    /*margin: 20px 20px 20px 70px;*/
+    margin-top: 20px;
+    color: rgb(250, 0, 196);
+    text-align: center;
+}
+body{
+    background-color:#fdf2fc ;
+}
+a{
+    color: rgb(250, 0, 196);
+}
