@@ -1,4 +1,4 @@
-/*const mysql = require('./code')
+const mysql = require('./code')
 
 
 let sql = "select * from cursos "
@@ -16,4 +16,4 @@ connection.query(sql, id, function (error, results, fields){
 })
 
 //Fecha conexão
-connection.end()*/
+connection.end()

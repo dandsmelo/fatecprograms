@@ -1,4 +1,4 @@
-/*const mysql = require('mysql')
+const mysql = require('mysql')
 
 let sql = 'insert into cursos set ?'
 let dados = {Nome: "Info", Tipo: "Exatas" }
@@ -9,4 +9,9 @@ connection.query(sql, dados, function(error,results,fields){
 )
 
 //Fecha conexão
-connection.end()*/
+connection.end()
+
+
+
+
+//
